@@ -22,3 +22,90 @@ select,
 textarea {
     max-width: 280px;
 }
+.majorHeading {
+    font-family: Lato;
+    font-weight: bold;
+    color: white;
+    font-size: xx-large;
+}
+
+.minorHeading {
+    font-family: Lato;
+    font-weight: bold;
+    color: white;
+    font-size: x-large;
+}
+
+.generalText {
+    font-family: Source Sans Pro;
+    color: white;
+    font-size: medium;
+}
+
+hr {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+    border-color: white;
+}
+.navText {
+    font-family: Source Sans Pro;
+    font-weight: bold;
+    font-size: large;
+    color: white;
+}
+.navText:hover {
+    color: #82c7a5;
+}
+.buttonFormattingRed {
+    background-color: lightcoral;
+    color: white;
+    padding: 2px 2px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: medium;
+    font-family: Source sans pro;
+    margin: 0px 0px;
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+.buttonFormattingRed:hover {
+    border: 2px solid white;
+}
+.buttonFormattingCyan {
+    background-color: #82c7a5;
+    color: white;
+    padding: 2px 2px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: medium;
+    font-family: Source sans pro;
+    margin: 0px 0px;
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+    .buttonFormattingCyan:hover {
+        border: 2px solid white;
+    }
+.buttonFormattingGrey {
+    background-color: lightgrey;
+    color: white;
+    padding: 2px 2px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: medium;
+    font-family: Source sans pro;
+    margin: 0px 0px;
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+    .buttonFormattingGrey:hover {
+        border: 2px solid white;
+    }
