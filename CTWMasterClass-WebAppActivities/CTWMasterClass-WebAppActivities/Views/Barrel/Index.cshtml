@@ -4,60 +4,99 @@
     ViewBag.Title = "Index";
 }
 
+    <div class="container">
+        <div class="row">
+            <div class=" col-sm-4">
+                <img src="~/Content/TriStar Logo.jpg" width="118px;" height="89px" ; />
+            </div>
+            <div class="navText">
+                <div class="col-sm-2" align="right">
+                    <br />
+                    <a href="https://localhost:44343/Barrel/HomePage">Home</a>
+                </div>
+                <div class="col-sm-2 col-sm-offset-1" align="right">
+                    <br />
+                    <a href="https://localhost:44343/Barrel/Index">List</a>
+                </div>
+                <div class="col-sm-2 col-sm-offset-1" align="right">
+                    <br />
+                    <a href="https://localhost:44343/Barrel/Create">Create</a>
+                </div>
+            </div>
+        </div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <body style="background-color: #1b212c">
+        </body>
+        <div class="buttonFormattingCyan">
+            <p>
+                @Html.ActionLink("Create New", "Create")
+            </p>
+        </div>
+        <div class="minorHeading">
+            <table class="table">
+                <tr>
+                    <th>
+                        Contents
+                    </th>
+                    <th>
+                        Weight
+                    </th>
+                    <th>
+                        Current Location
+                    </th>
+                    <th>
+                        Date Created
+                    </th>
 
-<h2>Index</h2>
+                </tr>
+        </div>
 
+        @foreach (var item in Model)
+        {
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
-<table class="table">
-    <tr>
-        <th>
-            Contents
-        </th>
-        <th>
-            Current Location
-        </th>
-        <th>
-            Date Created
-        </th>
-        <th></th>
-    </tr>
+            <tr class="generalText">
 
-    @foreach (var item in Model)
-    {
-        <tr>
+                <td>
 
-            <td>
+                    @Html.DisplayFor(modelItem => item.Contents)
 
-                @Html.DisplayFor(modelItem => item.Contents)
+                </td>
+                <td>
 
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.CurrentLocation)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.DateCreated)
-            </td>
-            <td>
+                    @Html.DisplayFor(modelItem => item.Weight)
 
-                <div class="buttonFormattingCyan">
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CurrentLocation)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DateCreated)
+                </td>
+                <td>
 
-                    <div class="navText:link">
-                        @Html.ActionLink("Edit", "Edit", new { id = item.Id })
+                    <div class="buttonFormattingCyan">
+
+                        <div class="navText:link">
+                            @Html.ActionLink("Edit", "Edit", new { id = item.Id })
+                        </div>
                     </div>
-                </div>
 
-                <div class="buttonFormattingGrey">
-                    @Html.ActionLink("Details", "Details", new { id = item.Id })
-                </div>
-                <div class="buttonFormattingRed">
-                    @Html.ActionLink("Delete", "Delete", new { id = item.Id })
-                </div>
-            </td>
-        </tr>
-    }
+                    <div class="buttonFormattingGrey">
+                        @Html.ActionLink("Details", "Details", new { id = item.Id })
+                    </div>
+                    <div class="buttonFormattingRed">
+                        @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+                    </div>
+                </td>
+            </tr>
 
-</table>
+
+        }
+
+
 
