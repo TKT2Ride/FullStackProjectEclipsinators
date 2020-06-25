@@ -1,0 +1,90 @@
+﻿
+.majorHeading {
+    font-family: Garamond;
+    font-weight: bold;
+    color: black;
+    font-size: xx-large;
+}
+
+.minorHeading {
+    font-family: Georgia;
+    font-weight: bold;
+    color: #557A95;
+    font-size: x-large;
+}
+
+.generalText {
+    font-family: Garamond;
+    color: black;
+    font-size: small;
+}
+
+.buttonFormatting {
+    background-color: #f7f5e7;
+    color: black;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: medium;
+    font-family: Georgia;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+    .buttonFormatting:hover {
+        background-color: white;
+        color: #557A95;
+        border: 2px solid black;
+    }
+
+.contactText {
+    font-size: xx-large;
+    font-weight: bold;
+    font-family: Garamond
+}
+
+#yellowBorderTop {
+    border-top: solid #f7f5e7 20px;
+}
+
+.emptyBorder {
+    border-top: solid #ffffff 30px;
+}
+
+#yellowBorderTop {
+    border-top: solid #f7f5e7 20px;
+}
+
+.emptyBorder {
+    border-top: solid #ffffff 30px;
+}
+
+#navigationBar {
+    background-color: #f7f5e7;
+    font-family: Georgia;
+    font-weight: bold;
+    color: #557A95;
+    font-size: x-large;
+}
+
+.brMajor {
+    display: block;
+    margin: 10px 0;
+}
+
+#opportunityBar {
+    background-color: #52B2BF;
+}
+
+#opportunityBar1 {
+    background-color: #F5F5F5;
+}
+
+.minorHeading2 {
+    font-family: Georgia;
+    font-weight: bold;
+    color: black;
+    font-size: x-large;
+}
