@@ -26,5 +26,6 @@ namespace CTWMasterClass_WebAppActivities.Controllers
 
             return View();
         }
+        
     }
 }
