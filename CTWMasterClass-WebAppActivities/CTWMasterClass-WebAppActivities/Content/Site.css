@@ -58,7 +58,10 @@ hr {
     font-size: large;
     color: white;
 }
-.navText:hover {
+a:link{
+    color:white;
+}
+navText:hover {
     color: #82c7a5;
 }
 .buttonFormattingRed {
