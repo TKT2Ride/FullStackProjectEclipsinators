@@ -1,6 +1,7 @@
 ﻿using CTWMasterClass_WebAppActivities.Models;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Web;
 
@@ -23,14 +24,19 @@ namespace CTWMasterClass_WebAppActivities.Repositories
             dbContext.Barrels.Add(toAdd);
             dbContext.SaveChanges();
         }
+        public Barrel GetBarrelById(int Id)
+        {
+            return dbContext.Barrels.Find(Id);
+        }
         public void DeleteBarrel(Barrel toDelete)
         {
             dbContext.Barrels.Remove(toDelete);
             dbContext.SaveChanges();
         }
-        public Barrel GetBarrelById(int id)
+        public void SaveEdits(Barrel toSave)
         {
-            return dbContext.Barrels.Find(id);
+            dbContext.Entry(toSave).State = EntityState.Modified;
+            dbContext.SaveChanges();
         }
     }
 }

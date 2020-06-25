@@ -25,15 +25,17 @@ namespace CTWMasterClass_WebAppActivities.Service
         {
             repository.AddBarrel(toAdd);
         }
-
-        public Barrel GetBarrelById(int id)
+        public void SaveEdits(Barrel toSave)
         {
-            return repository.GetBarrelById(id);
+            repository.SaveEdits(toSave);
         }
         public void DeleteBarrel(Barrel barrel)
         {
             repository.DeleteBarrel(barrel);
         }
-
+        public Barrel GetBarrelById(int Id)
+        {
+            return repository.GetBarrelById(Id);
+        }
     }
 }
