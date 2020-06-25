@@ -1,0 +1,31 @@
+﻿@model CTWMasterClass_WebAppActivities.Models.Barrel
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this barrel?</h3>
+<div>
+    <h4>Delete</h4>
+    <hr />
+
+    <div align="center">
+        <p class="generalText">Date created: @Html.DisplayFor(model => model.DateCreated)</p>
+        <p class="generalText">Contents: @Html.DisplayFor(model => model.Contents)</p>
+        <p class="generalText">Current Location: @Html.DisplayFor(model => model.CurrentLocation)</p>
+        <p class="generalText">Construction Material: @Html.DisplayFor(model => model.ConstructionMaterial)</p>
+        <p class="generalText">Radius: @Html.DisplayFor(model => model.Radius)</p>
+        <p class="generalText">Height: @Html.DisplayFor(model => model.Height)</p>
+    </div>
+
+    <div class="generalText">This deletion will be permanent</div>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+
+</div>

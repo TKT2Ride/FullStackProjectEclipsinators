@@ -229,6 +229,7 @@
     <Content Include="Views\List\fghdh.cshtml" />
     <Content Include="Views\Barrel\Index.cshtml" />
     <Content Include="Views\Barrel\Create.cshtml" />
+    <Content Include="Views\Barrel\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
