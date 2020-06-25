@@ -1,42 +1,41 @@
-﻿
-.majorHeading {
-    font-family: Garamond;
+﻿.majorHeading {
+    font-family: Lato;
     font-weight: bold;
-    color: black;
+    color: white;
     font-size: xx-large;
 }
 
 .minorHeading {
-    font-family: Georgia;
+    font-family: Lato;
     font-weight: bold;
-    color: #557A95;
+    color: white;
     font-size: x-large;
 }
 
 .generalText {
-    font-family: Garamond;
-    color: black;
-    font-size: small;
+    font-family: Source sans-serif;
+    color: white;
+    font-size: medium;
 }
 
 .buttonFormatting {
-    background-color: #f7f5e7;
-    color: black;
+    
+    color: white;
     padding: 5px 15px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: medium;
-    font-family: Georgia;
-    margin: 4px 2px;
+    font-family: Source sans-serif;
+    margin: 2px 2px;
     cursor: pointer;
     transition-duration: 0.4s;
 }
 
     .buttonFormatting:hover {
-        background-color: white;
-        color: #557A95;
-        border: 2px solid black;
+        
+        color: #82c7a5;
+        
     }
 
 .contactText {
@@ -45,16 +44,24 @@
     font-family: Garamond
 }
 
-#yellowBorderTop {
-    border-top: solid #f7f5e7 20px;
+hr {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+    border-color: white;
+    
 }
 
 .emptyBorder {
     border-top: solid #ffffff 30px;
 }
 
-#yellowBorderTop {
-    border-top: solid #f7f5e7 20px;
+#yellowBorderRight {
+    border-right: solid white 20px;
 }
 
 .emptyBorder {
