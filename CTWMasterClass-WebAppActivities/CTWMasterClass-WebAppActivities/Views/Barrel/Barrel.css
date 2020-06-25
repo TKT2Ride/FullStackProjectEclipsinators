@@ -1,0 +1,97 @@
+﻿.majorHeading {
+    font-family: Lato;
+    font-weight: bold;
+    color: white;
+    font-size: xx-large;
+}
+
+.minorHeading {
+    font-family: Lato;
+    font-weight: bold;
+    color: white;
+    font-size: x-large;
+}
+
+.generalText {
+    font-family: Source sans-serif;
+    color: white;
+    font-size: medium;
+}
+
+.buttonFormatting {
+    
+    color: white;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: medium;
+    font-family: Source sans-serif;
+    margin: 2px 2px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+    .buttonFormatting:hover {
+        
+        color: #82c7a5;
+        
+    }
+
+.contactText {
+    font-size: xx-large;
+    font-weight: bold;
+    font-family: Garamond
+}
+
+hr {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+    border-color: white;
+    
+}
+
+.emptyBorder {
+    border-top: solid #ffffff 30px;
+}
+
+#yellowBorderRight {
+    border-right: solid white 20px;
+}
+
+.emptyBorder {
+    border-top: solid #ffffff 30px;
+}
+
+#navigationBar {
+    background-color: #f7f5e7;
+    font-family: Georgia;
+    font-weight: bold;
+    color: #557A95;
+    font-size: x-large;
+}
+
+.brMajor {
+    display: block;
+    margin: 10px 0;
+}
+
+#opportunityBar {
+    background-color: #52B2BF;
+}
+
+#opportunityBar1 {
+    background-color: #F5F5F5;
+}
+
+.minorHeading2 {
+    font-family: Georgia;
+    font-weight: bold;
+    color: black;
+    font-size: x-large;
+}

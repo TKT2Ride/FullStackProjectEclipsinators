@@ -176,6 +176,10 @@
     <Compile Include="Migrations\202006242148530_Barrel.Designer.cs">
       <DependentUpon>202006242148530_Barrel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202006251738191_barrelMod.cs" />
+    <Compile Include="Migrations\202006251738191_barrelMod.Designer.cs">
+      <DependentUpon>202006251738191_barrelMod.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
     <Compile Include="Models\Barrel.cs" />
@@ -193,6 +197,7 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\TriStar Logo.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -211,6 +216,7 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Views\Barrel\Barrel.css" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -229,6 +235,8 @@
     <Content Include="Views\List\fghdh.cshtml" />
     <Content Include="Views\Barrel\Index.cshtml" />
     <Content Include="Views\Barrel\Create.cshtml" />
+    <Content Include="Views\Barrel\Delete.cshtml" />
+    <Content Include="Views\Barrel\Details.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
@@ -247,6 +255,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202006242148530_Barrel.resx">
       <DependentUpon>202006242148530_Barrel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202006251738191_barrelMod.resx">
+      <DependentUpon>202006251738191_barrelMod.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
