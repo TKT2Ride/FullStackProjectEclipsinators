@@ -23,5 +23,14 @@ namespace CTWMasterClass_WebAppActivities.Repositories
             dbContext.Barrels.Add(toAdd);
             dbContext.SaveChanges();
         }
+        public void DeleteBarrel(Barrel toDelete)
+        {
+            dbContext.Barrels.Remove(toDelete);
+            dbContext.SaveChanges();
+        }
+        public Barrel GetBarrelById(int id)
+        {
+            return dbContext.Barrels.Find(id);
+        }
     }
 }
