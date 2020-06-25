@@ -11,6 +11,7 @@ namespace CTWMasterClass_WebAppActivities.Controllers
     public class BarrelController : Controller
     {
         private BarrelService service = new BarrelService();
+        private int quantity;
         // GET: Barrel
         public ActionResult Index()
         {
@@ -23,7 +24,7 @@ namespace CTWMasterClass_WebAppActivities.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(Barrel barrel)
+        public ActionResult Create(Barrel barrel, int value)
         {
             if (ModelState.IsValid)
             {
