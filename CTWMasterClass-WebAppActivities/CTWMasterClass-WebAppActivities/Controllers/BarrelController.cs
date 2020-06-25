@@ -56,5 +56,20 @@ namespace CTWMasterClass_WebAppActivities.Controllers
             service.DeleteBarrel(barrel);
             return RedirectToAction("Index");
         }
+
+        public ActionResult Details(int? id)
+        {
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            Barrel barrel = service.GetBarrelById((int)id);
+            if (barrel == null)
+            {
+                return HttpNotFound();
+            }
+            return View(barrel);
+        }
+
     }
 }
