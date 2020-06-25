@@ -22,3 +22,32 @@ select,
 textarea {
     max-width: 280px;
 }
+.navText {
+    font-family: Source Sans Pro;
+    font-weight: bold;
+    color: white;
+    font-size: x-large;
+}
+
+.minorHeading2 {
+    font-family: Georgia;
+    font-weight: bold;
+    color: black;
+    font-size: x-large;
+}
+
+.titleText {
+    font-family: Lato;
+    font-weight: bold;
+    color: white;
+    font-size: x-large;
+}
+
+#navigationBar {
+    background-color: #1b212c;
+    font-family: Lato;
+    font-weight: bold;
+    color: white;
+    font-size: x-large;
+}
+
