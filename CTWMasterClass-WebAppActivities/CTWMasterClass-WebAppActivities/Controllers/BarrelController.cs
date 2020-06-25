@@ -24,7 +24,7 @@ namespace CTWMasterClass_WebAppActivities.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(Barrel barrel, int value)
+        public ActionResult Create(Barrel barrel)
         {
             if (ModelState.IsValid)
             {
