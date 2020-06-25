@@ -24,9 +24,11 @@ textarea {
 }
 .navText {
     font-family: Source Sans Pro;
-    font-weight: bold;
     color: white;
     font-size: x-large;
+}
+a:link {
+    color: white;
 }
 
 .minorHeading2 {
@@ -40,7 +42,7 @@ textarea {
     font-family: Lato;
     font-weight: bold;
     color: white;
-    font-size: x-large;
+    font-size: xx-large;
 }
 
 #navigationBar {
