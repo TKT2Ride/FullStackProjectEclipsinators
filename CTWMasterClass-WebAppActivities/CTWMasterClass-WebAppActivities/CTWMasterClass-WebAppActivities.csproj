@@ -197,6 +197,7 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\ct-1516211629-mkjhk4knoh-snap-image.jpg" />
     <Content Include="Content\TriStar Logo.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -235,8 +236,7 @@
     <Content Include="Views\List\fghdh.cshtml" />
     <Content Include="Views\Barrel\Index.cshtml" />
     <Content Include="Views\Barrel\Create.cshtml" />
-    <Content Include="Views\Barrel\Delete.cshtml" />
-    <Content Include="Views\Barrel\Details.cshtml" />
+    <Content Include="Views\Barrel\HomePage.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
