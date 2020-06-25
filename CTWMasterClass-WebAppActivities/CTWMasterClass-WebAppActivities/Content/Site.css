@@ -65,6 +65,15 @@ hr {
         color:white;
     }
 
+a:link{
+    color:white;
+}
+
+a:hover {
+    color: #82c7a5;
+}
+
+
 
 .buttonFormattingRed {
     background-color: lightcoral;
