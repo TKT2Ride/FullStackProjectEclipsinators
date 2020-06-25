@@ -25,9 +25,12 @@ textarea {
 .navText {
     font-family: Source Sans Pro;
     color: white;
-    font-size: x-large;
+    font-size: large;
 }
 a:link {
+    color: white;
+}
+a:hover{
     color: white;
 }
 
