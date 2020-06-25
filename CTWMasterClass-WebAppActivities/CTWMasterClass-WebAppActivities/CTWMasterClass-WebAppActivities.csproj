@@ -176,6 +176,10 @@
     <Compile Include="Migrations\202006242148530_Barrel.Designer.cs">
       <DependentUpon>202006242148530_Barrel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202006251738191_barrelMod.cs" />
+    <Compile Include="Migrations\202006251738191_barrelMod.Designer.cs">
+      <DependentUpon>202006251738191_barrelMod.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
     <Compile Include="Models\Barrel.cs" />
@@ -193,8 +197,6 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
-    <Content Include="Content\ct-1516211629-mkjhk4knoh-snap-image.jpg" />
-    <Content Include="Content\TriStar Logo.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -225,9 +227,11 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\HomePage.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
-    <Content Include="Views\Barrel\List\fghdh.cshtml" />
+    <Content Include="Views\List\fghdh.cshtml" />
     <Content Include="Views\Barrel\Index.cshtml" />
     <Content Include="Views\Barrel\Create.cshtml" />
   </ItemGroup>
@@ -248,6 +252,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202006242148530_Barrel.resx">
       <DependentUpon>202006242148530_Barrel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202006251738191_barrelMod.resx">
+      <DependentUpon>202006251738191_barrelMod.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
