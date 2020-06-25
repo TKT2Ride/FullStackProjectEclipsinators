@@ -61,6 +61,9 @@ hr {
 .navText:hover {
     color: #82c7a5;
 }
+.navText:link{
+    color: white;
+}
 .buttonFormattingRed {
     background-color: lightcoral;
     color: white;

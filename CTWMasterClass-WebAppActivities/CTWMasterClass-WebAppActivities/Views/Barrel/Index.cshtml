@@ -7,16 +7,20 @@
 
 <h2>Index</h2>
 
+
 <p>
-       @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("Create New", "Create")
 </p>
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.Height)
+            Contents
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Radius)
+            Current Location
+        </th>
+        <th>
+            Date Created
         </th>
         <th></th>
     </tr>
@@ -24,16 +28,33 @@
     @foreach (var item in Model)
     {
         <tr>
+
             <td>
-                @Html.DisplayFor(modelItem => item.Height)
+
+                @Html.DisplayFor(modelItem => item.Contents)
+
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Radius)
+                @Html.DisplayFor(modelItem => item.CurrentLocation)
             </td>
             <td>
-                @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
-                @Html.ActionLink("Details", "Details", new { id = item.Id }) |
-                @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+                @Html.DisplayFor(modelItem => item.DateCreated)
+            </td>
+            <td>
+
+                <div class="buttonFormattingCyan">
+
+                    <div class="navText:link">
+                        @Html.ActionLink("Edit", "Edit", new { id = item.Id })
+                    </div>
+                </div>
+
+                <div class="buttonFormattingGrey">
+                    @Html.ActionLink("Details", "Details", new { id = item.Id })
+                </div>
+                <div class="buttonFormattingRed">
+                    @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+                </div>
             </td>
         </tr>
     }
