@@ -10,6 +10,7 @@ namespace CTWMasterClass_WebAppActivities.Models
 {
     public class ApplicationDbContext : DbContext
     {
+        public DbSet<Barrel> Barrels { get; set; }
         public ApplicationDbContext() : base("DefaultConnection")
         {
         }
