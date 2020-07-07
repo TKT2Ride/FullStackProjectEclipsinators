@@ -167,6 +167,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\BarrelController.cs" />
+    <Compile Include="Controllers\CubeController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ListController.cs" />
     <Compile Include="Global.asax.cs">
@@ -183,6 +184,10 @@
     <Compile Include="Migrations\202007071508568_cubes.cs" />
     <Compile Include="Migrations\202007071508568_cubes.Designer.cs">
       <DependentUpon>202007071508568_cubes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202007071539494_cube2.cs" />
+    <Compile Include="Migrations\202007071539494_cube2.Designer.cs">
+      <DependentUpon>202007071539494_cube2.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
@@ -245,7 +250,7 @@
     <Content Include="Views\Barrel\Create.cshtml" />
     <Content Include="Views\Barrel\HomePage.cshtml" />
     <Content Include="Views\Barrel\Edit.cshtml" />
-    <Content Include="Views\Barrel\CreateCube.cshtml" />
+    <Content Include="Views\Cube\CreateCube.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
@@ -270,6 +275,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202007071508568_cubes.resx">
       <DependentUpon>202007071508568_cubes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202007071539494_cube2.resx">
+      <DependentUpon>202007071539494_cube2.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
