@@ -33,7 +33,7 @@ namespace CTWMasterClass_WebAppActivities.Service
         {
             repository.DeleteCube(cube);
         }
-        public Barrel GetCubeById(int Id)
+        public Cube GetCubeById(int Id)
         {
             return repository.GetCubeById(Id);
         }
