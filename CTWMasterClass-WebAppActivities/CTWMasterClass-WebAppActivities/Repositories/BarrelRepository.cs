@@ -44,12 +44,5 @@ namespace CTWMasterClass_WebAppActivities.Repositories
             dbContext.Entry(toSave).State = EntityState.Modified;
             dbContext.SaveChanges();
         }
-
-
-        public void AddCube(Cube toAdd)
-        {
-            dbContext.Cubes.Add(toAdd);
-            dbContext.SaveChanges();
-        }
     }
 }

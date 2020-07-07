@@ -42,9 +42,5 @@ namespace CTWMasterClass_WebAppActivities.Service
             return repository.GetBarrelById(Id);
         }
 
-        public void AddCube(Cube toAdd)
-        {
-            repository.AddCube(toAdd);
-        }
     }
 }

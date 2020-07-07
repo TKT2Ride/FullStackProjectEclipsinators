@@ -12,6 +12,7 @@ namespace CTWMasterClass_WebAppActivities.Controllers
     public class BarrelController : Controller
     {
         private BarrelService service = new BarrelService();
+        private CubeService serviceCube = new CubeService();
         private int quantity;
         // GET: Barrel
         public ActionResult Index()
@@ -42,7 +43,7 @@ namespace CTWMasterClass_WebAppActivities.Controllers
         {
             if (ModelState.IsValid)
             {
-                service.AddCube(cube);
+                serviceCube.AddCube(cube);
                 return RedirectToAction("Index");
             }
 
