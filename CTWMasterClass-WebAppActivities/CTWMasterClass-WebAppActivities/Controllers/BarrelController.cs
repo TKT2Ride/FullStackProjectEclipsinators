@@ -22,6 +22,10 @@ namespace CTWMasterClass_WebAppActivities.Controllers
         {
             return View();
         }
+        public ActionResult CreateCube()
+        {
+            return View();
+        }
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Create(Barrel barrel)
@@ -33,6 +37,16 @@ namespace CTWMasterClass_WebAppActivities.Controllers
             }
 
             return View(barrel);
+        }
+        public ActionResult CreateCube(Cube cube)
+        {
+            if (ModelState.IsValid)
+            {
+                service.AddCube(cube);
+                return RedirectToAction("Index");
+            }
+
+            return View(cube);
         }
         public ActionResult Delete(int? id)
         {

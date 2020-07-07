@@ -19,6 +19,12 @@ namespace CTWMasterClass_WebAppActivities.Repositories
         {
             return dbContext.Barrels.ToList();
         }
+        public List<Cube> GetAllCubes()
+        {
+            return dbContext.Cubes.ToList();
+        }
+
+
         public void AddBarrel(Barrel toAdd)
         {
             dbContext.Barrels.Add(toAdd);
@@ -36,6 +42,13 @@ namespace CTWMasterClass_WebAppActivities.Repositories
         public void SaveEdits(Barrel toSave)
         {
             dbContext.Entry(toSave).State = EntityState.Modified;
+            dbContext.SaveChanges();
+        }
+
+
+        public void AddCube(Cube toAdd)
+        {
+            dbContext.Cubes.Add(toAdd);
             dbContext.SaveChanges();
         }
     }
