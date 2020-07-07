@@ -180,9 +180,14 @@
     <Compile Include="Migrations\202006251738191_barrelMod.Designer.cs">
       <DependentUpon>202006251738191_barrelMod.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202007071508568_cubes.cs" />
+    <Compile Include="Migrations\202007071508568_cubes.Designer.cs">
+      <DependentUpon>202007071508568_cubes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
     <Compile Include="Models\Barrel.cs" />
+    <Compile Include="Models\Cube.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\BarrelRepository.cs" />
     <Compile Include="Service\BarrelService.cs" />
@@ -259,6 +264,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202006251738191_barrelMod.resx">
       <DependentUpon>202006251738191_barrelMod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202007071508568_cubes.resx">
+      <DependentUpon>202007071508568_cubes.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
