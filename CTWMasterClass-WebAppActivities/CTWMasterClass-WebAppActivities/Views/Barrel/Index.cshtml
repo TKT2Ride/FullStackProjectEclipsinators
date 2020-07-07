@@ -35,17 +35,18 @@
 </body>
 <div class="buttonFormattingCyan">
     <p>
-        @Html.ActionLink("Create New", "Create")
+        @Html.ActionLink("Create New Barrel", "Create")
+    </p>
+</div>
+<div class="buttonFormattingCyan">
+    <p>
+        @Html.ActionLink("Create New Cube", "Create")
     </p>
 </div>
 
-<div class="majorHeading">
-    Barrels
-</div>
 <div class="minorHeading">
     <table class="table">
         <tr>
-
             <th>
                 Contents
             </th>
@@ -101,70 +102,68 @@
         </td>
     </tr>
 
-
-    <div class="majorHeading">
-        Barrels
-    </div>
-    <div class="minorHeading">
-        <table class="table">
-            <tr>
-
-                <th>
-                    Contents
-                </th>
-                <th>
-                    Weight
-                </th>
-                <th>
-                    Current Location
-                </th>
-                <th>
-                    Date Created
-                </th>
-
-            </tr>
-    </div>
 }
-    @foreach (var item in Model)
-    {
 
-        <tr class="generalText">
 
-            <td>
+<div class="minorHeading">
+    <table class="table">
+        <tr>
+            <th>
+                Contents
+            </th>
+            <th>
+                Weight
+            </th>
+            <th>
+                Current Location
+            </th>
+            <th>
+                Date Created
+            </th>
 
-                @Html.DisplayFor(modelItem => item.Contents)
-
-            </td>
-            <td>
-
-                @Html.DisplayFor(modelItem => item.Weight)
-
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.CurrentLocation)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.DateCreated)
-            </td>
-            <td>
-
-                <div class="buttonFormattingCyan">
-
-                    <div class="navText:link">
-                        @Html.ActionLink("Edit", "Edit", new { id = item.Id })
-                    </div>
-                </div>
-
-                <div class="buttonFormattingGrey">
-                    @Html.ActionLink("Details", "Details", new { id = item.Id })
-                </div>
-                <div class="buttonFormattingRed">
-                    @Html.ActionLink("Delete", "Delete", new { id = item.Id })
-                </div>
-            </td>
         </tr>
+</div>
 
-    }
+@foreach (var item in Model)
+{
+
+    <tr class="generalText">
+
+        <td>
+
+            @Html.DisplayFor(modelItem => item.Contents)
+
+        </td>
+        <td>
+
+            @Html.DisplayFor(modelItem => item.Weight)
+
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CurrentLocation)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DateCreated)
+        </td>
+        <td>
+
+            <div class="buttonFormattingCyan">
+
+                <div class="navText:link">
+                    @Html.ActionLink("Edit", "Edit", new { id = item.Id })
+                </div>
+            </div>
+
+            <div class="buttonFormattingGrey">
+                @Html.ActionLink("Details", "Details", new { id = item.Id })
+            </div>
+            <div class="buttonFormattingRed">
+                @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+            </div>
+        </td>
+    </tr>
+
+}
 
 
 
