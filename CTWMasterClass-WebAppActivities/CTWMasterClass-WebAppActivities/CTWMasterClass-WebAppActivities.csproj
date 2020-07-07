@@ -251,6 +251,9 @@
     <Content Include="Views\Barrel\HomePage.cshtml" />
     <Content Include="Views\Barrel\Edit.cshtml" />
     <Content Include="Views\Cube\CreateCube.cshtml" />
+    <Content Include="Views\Barrel\Delete.cshtml" />
+    <Content Include="Views\Barrel\Details.cshtml" />
+    <Content Include="Views\Cube\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
