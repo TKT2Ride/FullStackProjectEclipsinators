@@ -21,6 +21,10 @@ namespace CTWMasterClass_WebAppActivities.Service
         {
             return repository.GetAllBarrels();
         }
+        public List<Cube> GetAllCubes()
+        {
+            return repository.GetAllCubes();
+        }
         public void AddBarrel(Barrel toAdd)
         {
             repository.AddBarrel(toAdd);
@@ -37,5 +41,6 @@ namespace CTWMasterClass_WebAppActivities.Service
         {
             return repository.GetBarrelById(Id);
         }
+
     }
 }

@@ -19,6 +19,12 @@ namespace CTWMasterClass_WebAppActivities.Repositories
         {
             return dbContext.Barrels.ToList();
         }
+        public List<Cube> GetAllCubes()
+        {
+            return dbContext.Cubes.ToList();
+        }
+
+
         public void AddBarrel(Barrel toAdd)
         {
             dbContext.Barrels.Add(toAdd);
