@@ -1,0 +1,66 @@
+﻿@model CTWMasterClass_WebAppActivities.Models.Cube
+
+<body style="background-color: #1b212c;">
+    <div class="container">
+        <div class="row">
+            <div class=" col-sm-2">
+                <img src="~/Content/TriStar Logo.jpg" width="118px;" height="89px" ; />
+            </div>
+            <div class="navText">
+                <div class="col-sm-1 col-sm-offset-1" align="right">
+                    <br />
+                    <a href="https://localhost:44343/Barrel/HomePage">Home</a>
+                </div>
+                <div class="col-sm-1 col-sm-offset-1" align="right">
+                    <br />
+                    <a href="https://localhost:44343/Barrel/Index">List</a>
+                </div>
+                <div class="col-sm-2 col-sm-offset-1" align="right">
+                    <br />
+                    <a href="https://localhost:44343/Barrel/Create">Create Barrels</a>
+                </div>
+                <div class="col-sm-2 col-sm-offset-1" align="right">
+                    <br />
+                    <a href="https://localhost:44343/Barrel/CreateCube">Create Cube</a>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+    <div class="row">
+        <div class="col-sm-12">
+            <h4 class="minorHeading">Details for this cube: </h4>
+        </div>
+    </div>
+    <div>
+
+        <hr />
+        <div class="row">
+            <div align="center" class="generalText">
+                <p>Date created: @Html.DisplayFor(model => model.DateCreated)</p>
+                <p>Contents: @Html.DisplayFor(model => model.Contents)</p>
+                <p>Current Location: @Html.DisplayFor(model => model.CurrentLocation)</p>
+                <p>Construction Material: @Html.DisplayFor(model => model.ConstructionMaterial)</p>
+                <p>Radius: @Html.DisplayFor(model => model.Side)</p>
+                <p>Weight: @Html.DisplayFor(model => model.Weight)</p>
+                <br />
+            </div>
+        </div>
+
+        @using (Html.BeginForm())
+        {
+@Html.AntiForgeryToken()
+
+
+                <div class="row">
+                    <button type="button" class="buttonFormattingGrey col-sm-2">@Html.ActionLink("Back", "Index")</button>
+                </div>}
+
+
+
+    </div>
+</body>
