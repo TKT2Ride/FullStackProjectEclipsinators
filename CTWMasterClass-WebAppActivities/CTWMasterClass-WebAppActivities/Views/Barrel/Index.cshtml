@@ -4,99 +4,167 @@
     ViewBag.Title = "Index";
 }
 
-    <div class="container">
-        <div class="row">
-            <div class=" col-sm-4">
-                <img src="~/Content/TriStar Logo.jpg" width="118px;" height="89px" ; />
+<div class="container">
+    <div class="row">
+        <div class=" col-sm-4">
+            <img src="~/Content/TriStar Logo.jpg" width="118px;" height="89px" ; />
+        </div>
+        <div class="navText">
+            <div class="col-sm-2" align="right">
+                <br />
+                <a href="https://localhost:44343/Barrel/HomePage">Home</a>
             </div>
-            <div class="navText">
-                <div class="col-sm-2" align="right">
-                    <br />
-                    <a href="https://localhost:44343/Barrel/HomePage">Home</a>
-                </div>
-                <div class="col-sm-2 col-sm-offset-1" align="right">
-                    <br />
-                    <a href="https://localhost:44343/Barrel/Index">List</a>
-                </div>
-                <div class="col-sm-2 col-sm-offset-1" align="right">
-                    <br />
-                    <a href="https://localhost:44343/Barrel/Create">Create</a>
-                </div>
+            <div class="col-sm-2 col-sm-offset-1" align="right">
+                <br />
+                <a href="https://localhost:44343/Barrel/Index">List</a>
+            </div>
+            <div class="col-sm-2 col-sm-offset-1" align="right">
+                <br />
+                <a href="https://localhost:44343/Barrel/Create">Create</a>
             </div>
         </div>
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <body style="background-color: #1b212c">
-        </body>
-        <div class="buttonFormattingCyan">
-            <p>
-                @Html.ActionLink("Create New", "Create")
-            </p>
-        </div>
-        <div class="minorHeading">
-            <table class="table">
-                <tr>
-                    <th>
-                        Contents
-                    </th>
-                    <th>
-                        Weight
-                    </th>
-                    <th>
-                        Current Location
-                    </th>
-                    <th>
-                        Date Created
-                    </th>
+    </div>
+</div>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<body style="background-color: #1b212c">
+</body>
+<div class="buttonFormattingCyan">
+    <p>
+        @Html.ActionLink("Create New", "Create")
+    </p>
+</div>
 
-                </tr>
-        </div>
+<div class="majorHeading">
+    Barrels
+</div>
+<div class="minorHeading">
+    <table class="table">
+        <tr>
 
-        @foreach (var item in Model)
-        {
+            <th>
+                Contents
+            </th>
+            <th>
+                Weight
+            </th>
+            <th>
+                Current Location
+            </th>
+            <th>
+                Date Created
+            </th>
 
-            <tr class="generalText">
+        </tr>
+</div>
 
-                <td>
+@foreach (var item in Model)
+{
 
-                    @Html.DisplayFor(modelItem => item.Contents)
+    <tr class="generalText">
 
-                </td>
-                <td>
+        <td>
 
-                    @Html.DisplayFor(modelItem => item.Weight)
+            @Html.DisplayFor(modelItem => item.Contents)
 
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.CurrentLocation)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.DateCreated)
-                </td>
-                <td>
+        </td>
+        <td>
 
-                    <div class="buttonFormattingCyan">
+            @Html.DisplayFor(modelItem => item.Weight)
 
-                        <div class="navText:link">
-                            @Html.ActionLink("Edit", "Edit", new { id = item.Id })
-                        </div>
-                    </div>
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CurrentLocation)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DateCreated)
+        </td>
+        <td>
 
-                    <div class="buttonFormattingGrey">
-                        @Html.ActionLink("Details", "Details", new { id = item.Id })
-                    </div>
-                    <div class="buttonFormattingRed">
-                        @Html.ActionLink("Delete", "Delete", new { id = item.Id })
-                    </div>
-                </td>
+            <div class="buttonFormattingCyan">
+
+                <div class="navText:link">
+                    @Html.ActionLink("Edit", "Edit", new { id = item.Id })
+                </div>
+            </div>
+
+            <div class="buttonFormattingGrey">
+                @Html.ActionLink("Details", "Details", new { id = item.Id })
+            </div>
+            <div class="buttonFormattingRed">
+                @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+            </div>
+        </td>
+    </tr>
+
+
+    <div class="majorHeading">
+        Barrels
+    </div>
+    <div class="minorHeading">
+        <table class="table">
+            <tr>
+
+                <th>
+                    Contents
+                </th>
+                <th>
+                    Weight
+                </th>
+                <th>
+                    Current Location
+                </th>
+                <th>
+                    Date Created
+                </th>
+
             </tr>
+    </div>
+}
+    @foreach (var item in Model)
+    {
 
+        <tr class="generalText">
 
-        }
+            <td>
+
+                @Html.DisplayFor(modelItem => item.Contents)
+
+            </td>
+            <td>
+
+                @Html.DisplayFor(modelItem => item.Weight)
+
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CurrentLocation)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DateCreated)
+            </td>
+            <td>
+
+                <div class="buttonFormattingCyan">
+
+                    <div class="navText:link">
+                        @Html.ActionLink("Edit", "Edit", new { id = item.Id })
+                    </div>
+                </div>
+
+                <div class="buttonFormattingGrey">
+                    @Html.ActionLink("Details", "Details", new { id = item.Id })
+                </div>
+                <div class="buttonFormattingRed">
+                    @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+                </div>
+            </td>
+        </tr>
+
+    }
 
 
 
