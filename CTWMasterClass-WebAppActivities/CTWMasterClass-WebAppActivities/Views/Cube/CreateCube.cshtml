@@ -1,0 +1,130 @@
+﻿
+@model CTWMasterClass_WebAppActivities.Models.Cube
+
+@{
+    ViewBag.Title = "CreateCube";
+}
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+<body style="background-color:#1b212c;">
+    <link href="~/Evan/Create.css" rel="stylesheet" />
+    <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <br />
+    <div id="background">
+        <div class="container">
+            <div class="row">
+                <div class=" col-sm-4">
+                    <img src="~/Content/TriStar Logo.jpg" width="118px" height="89px" ; />
+                </div>
+                <div class="navText">
+                    <div class="col-sm-2" align="right">
+                        <br />
+                        <a href="https://localhost:44343/Barrel/HomePage">Home</a>
+                    </div>
+                    <div class="col-sm-2 col-sm-offset-1" align="right">
+                        <br />
+                        <a href="https://localhost:44343/Barrel/Index">List</a>
+                    </div>
+                    <div class="col-sm-2 col-sm-offset-1" align="right">
+                        <br />
+                        <a href="https://localhost:44343/Barrel/Create">Create</a>
+                    </div>
+                    <div class="col-sm-2 col-sm-offset-1" align="right">
+                        <br />
+                        <a href="https://localhost:44343/Barrel/CreateCube">Create Cube</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <h3 class="majorHeading" align="center">Create a Cube</h3>
+        </div>
+        <div class="row">
+            <div class="offset-md-2 col-md-6">
+                <h3 class="minorHeading" align="left">Create a Custom Cube</h3>
+            </div>
+        </div>
+    </div>
+
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-horizontal">
+            <div class="generalText">
+                <hr />
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Side, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.Side, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.Side, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Weight, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.Weight, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.Weight, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Weight, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.Weight, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.Weight, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(model => model.ConstructionMaterial, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.ConstructionMaterial, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.ConstructionMaterial, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Contents, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.Contents, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.Contents, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(model => model.CurrentLocation, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.CurrentLocation, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.CurrentLocation, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(model => model.DateCreated, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.DateCreated, new { htmlAttributes = new { @class = "form-control", @type = "Date" } })
+                        @Html.ValidationMessageFor(model => model.DateCreated, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <br />
+                <br />
+
+                <div class="form-group">
+                    <div class="offset-md-2 col-md-5">
+                        <input type="submit" value="Create" class="btn btn-default" />
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    }
+
+</body>
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
